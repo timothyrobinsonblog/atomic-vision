@@ -51,7 +51,9 @@ html {
   grid-template-columns: 4.7fr 0.3fr;
   grid-template-rows: 0.325fr 9.35fr 0.325fr;
   height: 100vh;
-  background-color: var(--maroon-m);
+  
+  background-color: var(--blue-m);
+  background-color: var(--green-m);
   grid-template-areas: 
   "header-area         header-area"
   "main-content-area   menu-area"
@@ -127,14 +129,20 @@ html {
       
 .main-content {
   grid-area: main-content-area;
-  display: flex;
+  /* display: flex;
   justify-content: flex-start;
-  flex-direction: column;
+  flex-direction: column; */
+  display: grid;
   width: 100%;
   height: 100%;
   /* For 3 lines at top:
   position: relative;
   border-top: 1px solid black; First border */
+  grid-template-columns: 5fr 5fr;
+  grid-template-rows: 7fr 3fr;
+  grid-template-areas: 
+  "description-area   description-area"
+  "picture-area       link-area";
 }
 
 .contact-button {
@@ -154,42 +162,71 @@ html {
 }
 
 .main-text {
-  height: 100%; /* need this to define flex element size so can center it */
-  width: 70%;
-  align-content: center;
-  align-self: center;
-  padding-bottom: 10vh;
-  font-size: 4rem;
+  grid-area: description-area;
+  height: 100%;
+  padding: 11vh 15% 0 15%;
+  /* width: 70%; */
+  /* align-content: center;
+  align-self: center; */
+  /* padding-bottom: 10vh; */
+  font-size: 3.5rem;
   font-family: var(--primary-non-serif-font);
-  /* font-family: var(--secondary-non-serif-font); */
-  /* font-family: var(--primary-serif-font); */
   font-weight: bold;
   line-height: 1.1;
   text-align: center;
-  font-style: italic;  
+  text-align: left;
+  
+  /* font-family: var(--secondary-non-serif-font); */
+  /* font-family: var(--primary-serif-font); */
+  /* border: 1px solid red; */
 }
 
 .main-text-styling {
-  font-family: var(--primary-serif-font);
+  /* font-family: var(--primary-serif-font); */
   font-style: normal;
+  text-align: left;
+  font-style: italic; 
+  font-weight: lighter;
+  
 }
 
 .superscript {
   font-size: 0.4em;
   vertical-align: super;
 }
+
+.picture-area {
+  grid-area: picture-area;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+
+    background-image: url("../img/folio-32_1500.jpg");
+    background-size: cover;                 /* Makes the image cover the whole div */
+    background-position: center;            /* Centers the image */
+    background-repeat: no-repeat;           /* Prevents tiling */
+
+}
+
+.link-area {
+  grid-area: link-area;
+  border-top: 1px solid black;
+  position: relative; /* allows absolute positioning inside */
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute; /* or use flex/grid if you want it centered */
+  top: 50px;
+  left: 100px;
+  color: white;
+  font-family: var(--primary-non-serif-font);
   
-a {
-  color: var(--primary-text-color);
-  font-style: none;
-  text-decoration: none;
 }
 
-a:hover {
-  cursor: grab;
-  text-decoration: underline;
-}
-
+  
 /* For 3 lines at top:
 .main-content::before, .main-content::after {
   content: '';
