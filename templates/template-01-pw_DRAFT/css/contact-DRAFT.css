@@ -300,14 +300,14 @@
     /* background-color: grey; */
     color: white;
     color: black;
-    /* font-family: Helvetica, sans-serif; */
     font-size: 1rem;
     justify-content: center;
     /* justify-content: flex-start; */
     z-index: 9999;
     /* padding-left: 1.5vw; */
     font-weight: bold;
-    font-family: var(--primary-non-serif-font);
+    font-family: Helvetica, sans-serif;
+    /* font-family: var(--primary-non-serif-font); */
     display: flex;
     align-items: center;
     background-color: var(--maroon-m);

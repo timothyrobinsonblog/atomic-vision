@@ -255,6 +255,40 @@
     grid-area: text-area;
   }
 
+  .fixed-header, .fixed-footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 0.5vh 0 0.5vh 0;
+    /* height: 3vh; */
+    /* background-color: grey; */
+    color: white;
+    color: black;
+    font-size: 1rem;
+    justify-content: center;
+    /* justify-content: flex-start; */
+    z-index: 9999;
+    /* padding-left: 1.5vw; */
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+    /* font-family: var(--primary-non-serif-font); */
+    display: flex;
+    align-items: center;
+    background-color: var(--maroon-m);
+    background-color: var(--link-color-hover);
+  }
+  
+  .fixed-header {
+    top: 0;
+    border-bottom: 1px solid black;
+  }
+  
+  .fixed-footer {
+    bottom: 0;
+    border-top: 1px solid black;
+  }
+
 /* __________________________________
    Responsive design - Tablet: */
 
