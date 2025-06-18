@@ -199,33 +199,44 @@ html {
   grid-area: picture-area;
   border-top: 1px solid black;
   border-right: 1px solid black;
-
-    background-image: url("../img/folio-32_1500.jpg");
-    background-size: cover;                 /* Makes the image cover the whole div */
-    background-position: center;            /* Centers the image */
-    background-repeat: no-repeat;           /* Prevents tiling */
-
+  background-image: url("../img/folio-32_1500.jpg");
+  background-size: cover;                 /* Makes the image cover the whole div */
+  background-position: center;            /* Centers the image */
+  background-repeat: no-repeat;           /* Prevents tiling */
 }
 
 .link-area {
   grid-area: link-area;
   border-top: 1px solid black;
-  position: relative; /* allows absolute positioning inside */
+  background-color: var(--maroon-m);
+}
+
+.link-area a {
+  text-decoration: none;
+}
+
+.link-area:hover {
+  text-decoration: underline;
 }
 
 .circle {
-  width: 150px;
-  height: 150px;
-  background-color: black;
-  border-radius: 50%;
-  position: absolute; /* or use flex/grid if you want it centered */
-  top: 50px;
-  left: 100px;
-  color: white;
-  font-family: var(--primary-non-serif-font);
-  
+  width: fit-content;
+  background-color: transparent;
+  /* background-color: var(--maroon-d);
+  background-color: var(--blue-d); */
+  padding: 10vh 0 0 10vw;
+  /* display: flex;
+  justify-content: center; */
+  font-family: Helvetica;
+  color: black;
+  font-weight: bold;
+  font-size: 2.7rem;
+  /* text-shadow:
+  -1px -1px 0 black,
+  1px -1px 0 black,
+  -1px  1px 0 black,
+  1px  1px 0 black; */
 }
-
   
 /* For 3 lines at top:
 .main-content::before, .main-content::after {
