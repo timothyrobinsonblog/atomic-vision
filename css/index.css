@@ -19,17 +19,17 @@ html {
 .container img {
   height: 80%;
   width: auto;
-  animation: spin 0.2s linear 20;
+  /* animation: spin 0.2s linear 20; */
 }
  
-@keyframes spin {
+/* @keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 .fixed-header, .fixed-footer {
   position: fixed;
