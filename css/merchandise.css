@@ -236,9 +236,10 @@ a:hover {
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    background-color: var(--maroon-l);
     grid-template-areas: 
     "main-content-area";
+    background-color: var(--maroon-l);
+    height: 90vh;
   }
 
   .header-area, .footer-area, .contact-button {
