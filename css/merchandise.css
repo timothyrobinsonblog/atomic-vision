@@ -231,16 +231,13 @@ a:hover {
 
   html {
     font-size: 14px;
-
     overflow-x: hidden;
     background-color: var(--maroon-m);
-    
-    
   }
 
   .container {
-    height: 97vh;
-    color: red;
+    /* height: 100%; */
+    border: 1px solid red;
   }
 
   .grid-container {
@@ -249,8 +246,7 @@ a:hover {
     grid-template-areas: 
     "main-content-area";
     background-color: var(--maroon-l);
-
-    /* height: 90vh; */
+    height: 92vh; /* 99 vh total with responsive header */
   }
 
   .header-area, .footer-area, .contact-button {
@@ -260,7 +256,7 @@ a:hover {
   .main-text {
     width: 80%;
     z-index: 0;
-    margin-bottom: 3vh;
+    /* margin-bottom: 3vh; CHEEEC KE LKWE KLME KLMELNELJHEJLJHIJ */ 
     font-size: 2rem;
     /* line-height: 1; */
   }
@@ -277,7 +273,7 @@ a:hover {
     position: relative;
     background-color: var(--maroon-m);
     align-items: center;
-    /* height: 7vh; */
+    height: 7vh;
   }
 
   .menu {
@@ -318,7 +314,7 @@ a:hover {
   }
 
   .burger {
-    border-right: 0.5px solid black;
+    /* border-right: 0.5px solid black; */
     /* padding: 1vh 0 1vh 2vw;
     border-radius: 25%;
     background-color: black; */
