@@ -233,24 +233,37 @@ a:hover {
     font-size: 14px;
     overflow-x: hidden;
     background-color: var(--maroon-m);
+
+    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
   }
 
   .container {
     /* height: 100%; */
-    border: 1px solid red;
+    border: 1px solid green;
   }
 
   .grid-container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
+    /* grid-template-rows: 1fr; */
     grid-template-areas: 
     "main-content-area";
     background-color: var(--maroon-l);
-    height: 92vh; /* 99 vh total with responsive header */
+    /* height: 92vh; 99 vh total with responsive header */
+    min-height: 100dvh;
+    overflow: hidden;
   }
 
   .header-area, .footer-area, .contact-button {
     display: none;
+  }
+
+  .main-content {
+    min-height: auto;
+    height: auto;
+    padding-bottom: 3vh;
   }
 
   .main-text {
@@ -259,6 +272,11 @@ a:hover {
     /* margin-bottom: 3vh; CHEEEC KE LKWE KLME KLMELNELJHEJLJHIJ */ 
     font-size: 2rem;
     /* line-height: 1; */
+
+    
+    
+    margin-bottom: 2vh;
+    
   }
 
 /* __________________________________________________-\ responsive header and burger menu: ________________________________________________________________________________________________________________________ */
@@ -273,7 +291,7 @@ a:hover {
     position: relative;
     background-color: var(--maroon-m);
     align-items: center;
-    height: 7vh;
+    /* height: 7vh; */
   }
 
   .menu {
@@ -350,10 +368,13 @@ a:hover {
     border-radius: 15px;
     font-size: 0.9rem;
     font-weight: bold;
-    background-color: rgb(10, 10, 10);
+    background-color: var(--maroon-l);
+    /* background-color: rgb(10, 10, 10); */
     /* background-color: black; */
-    color: gray;
+    color: black;
+    /* color: gray; */
     /* color: var(--maroon-m); */
+    border: 1px solid black;
   }
 
   .nav-active {
