@@ -234,11 +234,12 @@ a:hover {
 
     overflow-x: hidden;
     background-color: var(--maroon-m);
+    background-color: var(--maroon-l);
   }
 
   .container {
-    /* height: 100vh; */
-    color: red;
+    height: 97vh;
+    
   }
 
   .grid-container {
@@ -248,7 +249,7 @@ a:hover {
     "main-content-area";
     background-color: var(--maroon-l);
 
-    height: 90vh; /* 97 vh total with responsive header */
+    /* height: 90vh; */
   }
 
   .header-area, .footer-area, .contact-button {
@@ -275,7 +276,7 @@ a:hover {
     position: relative;
     background-color: var(--maroon-m);
     align-items: center;
-    height: 7vh;
+    /* height: 7vh; */
   }
 
   .menu {
