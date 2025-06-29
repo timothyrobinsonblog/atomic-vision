@@ -233,13 +233,17 @@ a:hover {
     font-size: 14px;
   }
 
+  .container {
+    height: 100vh;
+    color: red;
+  }
+
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "main-content-area";
     background-color: var(--maroon-l);
-    height: 90vh;
   }
 
   .header-area, .footer-area, .contact-button {
