@@ -237,7 +237,8 @@ a:hover {
 
   .container {
     /* height: 100vh; */
-    color: green;
+    color: yellow;
+    border: 2px solid red;
   }
 
   .grid-container {
@@ -247,7 +248,7 @@ a:hover {
     "main-content-area";
     background-color: var(--maroon-l);
 
-    height: 85vh;
+    height: 91vh; /* 98 vh total with responsive header */
   }
 
   .header-area, .footer-area, .contact-button {
@@ -273,6 +274,8 @@ a:hover {
     z-index: 2; /* Make header top layer in document:  */
     position: relative;
     background-color: var(--maroon-m);
+    align-items: center;
+    height: 7vh;
   }
 
   .menu {
@@ -341,7 +344,7 @@ a:hover {
   }
 
   .contact-button-responsive {
-    align-self: center;
+    /* align-self: center; */
     height: fit-content;
     width: fit-content;
     margin-right: 1.5vw;
