@@ -234,12 +234,13 @@ a:hover {
 
     overflow-x: hidden;
     background-color: var(--maroon-m);
-    background-color: var(--maroon-l);
+    
+    
   }
 
   .container {
     height: 97vh;
-    
+    color: red;
   }
 
   .grid-container {
