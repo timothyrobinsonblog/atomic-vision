@@ -233,12 +233,12 @@ a:hover {
     font-size: 14px;
 
     overflow-x: hidden;
+    background-color: var(--maroon-m);
   }
 
   .container {
     /* height: 100vh; */
-    color: yellow;
-    border: 2px solid red;
+    color: red;
   }
 
   .grid-container {
@@ -248,7 +248,7 @@ a:hover {
     "main-content-area";
     background-color: var(--maroon-l);
 
-    height: 91vh; /* 98 vh total with responsive header */
+    height: 90vh; /* 97 vh total with responsive header */
   }
 
   .header-area, .footer-area, .contact-button {
