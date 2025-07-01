@@ -21,7 +21,7 @@
   --maroon-l: #4d3636; 
   --maroon-m: #472828; 
   --maroon-d: #2e1f1f;
-  --primary-text-color: black;
+  --primary-text-color: black; /* probably delete this */
   /* Fonts: */
   --primary-serif-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   /* --primary-serif-font: Georgia; */
@@ -30,8 +30,8 @@
 }
  
 html {
-  background-color: var(--green-m);
   background-color: black;
+  /* background-color: var(--green-m); */
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -41,7 +41,7 @@ html {
   margin: 0 auto;
   width: 100%;
   font-family: var(--primary-non-serif-font); /* default font */ 
-  color: var(--primary-text-color);
+  color: black;
 }
 
 /* __________________________________________________-\ main structure and navigation: ________________________________________________________________________________________________________________________ */
@@ -79,11 +79,25 @@ html {
   white-space: nowrap; */
 }
 
+#home-link {
+  text-decoration: underline;
+  text-decoration-color: black;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 2px;
+  margin: 0 7px 1px 0;
+}
+
+#home-link:hover {
+  background-color: grey;
+  /* background-color: purple; */
+  cursor: grab;
+}
+
 .menu {
   grid-area: menu-area;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; /* note: want flex items horizontally centered when zoom out*/
+  justify-content: space-evenly; /* note: want menu flex items horizontally centered when zoom out*/
   height: 100%;
   writing-mode: vertical-rl;
   font-weight: bold;
@@ -123,6 +137,11 @@ html {
   left: -16px; /* third border */
 }
 
+.active-page-symbols {
+  display: inline-block;
+  transform: rotate(180deg);
+}
+
 .responsive-header {
   display: none;
 }
@@ -136,15 +155,13 @@ html {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  /* For 3 lines at top:
-  position: relative;
-  border-top: 1px solid black; First border */
 }
 
 .contact-button {
   align-self: flex-end;
   background-color: rgb(10, 10, 10);
   /* background-color: black; */
+  /* background-color: var(--maroon-m); */
   height: fit-content;
   width: fit-content;
   text-align: center;
@@ -169,48 +186,31 @@ html {
   /* font-family: var(--primary-serif-font); */
   font-weight: bold;
   line-height: 1.1;
-  text-align: center;
-  font-style: italic;  
+  text-align: center;  
 }
 
-.main-text-styling {
-  font-family: var(--primary-serif-font);
-  font-style: normal;
-}
-
-.superscript {
-  font-size: 0.4em;
-  vertical-align: super;
-}
-  
-a {
-  color: var(--primary-text-color);
-  font-style: none;
+a { /* remove styling from all anchor tags */
+  color: black;
   text-decoration: none;
 }
 
-a:hover {
+.main-content a:hover {
   cursor: grab;
-  text-decoration: underline;
+  text-decoration: underline;  
 }
 
-/* For 3 lines at top:
-.main-content::before, .main-content::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: black;
+.main-text-styling-one a {
+  font-style: italic;
 }
-  
-.main-content::before {
-  top: -8px; Second border
+
+.main-text-styling-two {
+  font-family: var(--primary-serif-font);
 }
-  
-.main-content::after {
-  top: -16px; Third border 
-} */
+
+.main-text-superscript {
+  font-size: 0.4em;
+  vertical-align: super;
+}
 
 /* __________________________________________________-\ responsive design - tablet: ________________________________________________________________________________________________________________________*/
 
@@ -231,12 +231,12 @@ a:hover {
 
   html {
     font-size: 14px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; NOT SURE if i need this */
     background-color: var(--maroon-m);
   }
 
   .container {
-    /* height: 100%; */
+    width: 90vw; /* check on phone */
   }
 
   .grid-container {
@@ -255,9 +255,9 @@ a:hover {
   .main-text {
     width: 80%;
     z-index: 0;
-    /* margin-bottom: 3vh; CHEEEC KE LKWE KLME KLMELNELJHEJLJHIJ */ 
+    padding-bottom: 2vh; /* check on phone */ 
     font-size: 3rem;
-    /* line-height: 1; */
+    /* line-height: 1; */ /* check on phone */ 
   }
 
 /* __________________________________________________-\ responsive header and burger menu: ________________________________________________________________________________________________________________________ */
@@ -280,8 +280,7 @@ a:hover {
     right: 0;
     top: 0;
     z-index: 1;
-    /* Check height/width on device: */
-    height: 100vh;
+    height: 100vh; /* Check height/width on device: */
     width: 100vw;
     justify-content: center;
     align-items: center;
@@ -290,18 +289,14 @@ a:hover {
     writing-mode: horizontal-tb;
     background-color: rgb(10, 10, 10);
     /* background-color: var(--green-m); */
-    color: gray;
+    /* background-color: gray; */
   }
 
-  /* .menu a {
+  .menu a {
     color: rgba(124, 124, 129, 1);
-  } */
-
-  /* #active-page {
-    padding-bottom: 1px;
-    font-family: var(--primary-font);
-    width: fit-content;
-  } */
+    /* color: gray; */
+    /* color: black; */
+  }
 
   .menu > div, .menu > div:last-child {
     border: none;
@@ -313,7 +308,7 @@ a:hover {
   }
 
   .burger {
-    /* border-right: 0.5px solid black; */
+    /* TRY ON PHONE: */
     /* padding: 1vh 0 1vh 2vw;
     border-radius: 25%;
     background-color: black; */
@@ -324,8 +319,8 @@ a:hover {
     height: 6px;
     margin: 6px;
     background: black;
-    transition: all 0.3s ease-in;
     /* background: grey; */
+    transition: all 0.3s ease-in;
   }
 
   .toggle .line1 {
@@ -341,7 +336,6 @@ a:hover {
   }
 
   .contact-button-responsive {
-    /* align-self: center; */
     height: fit-content;
     width: fit-content;
     margin-right: 1.5vw;
