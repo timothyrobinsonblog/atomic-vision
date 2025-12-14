@@ -291,14 +291,20 @@ a { /* remove styling from all anchor tags */
     align-items: center;
     height: 7vh;
     min-height: fit-content;
+    background-color: #7D8590;
+    padding: 2vh 0 1vh 0;
   }
 
   .responsive-header img {
     height: 8vh;
-    filter: grayscale(100%) contrast(1.85);
-    padding-left: 7.5vw;
+    /* filter: grayscale(100%) contrast(1.85); */
+    margin-left: 7.5vw;
+    /* padding-left: 7.5vw; */
     /* border: 1px solid black; */
     /* border-radius: 50%; */
+    background-color: #0D1117;
+    /* background-color: var(--maroon-m); */
+    border-radius: 100%;
   }
 
   .menu {
