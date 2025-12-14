@@ -242,7 +242,7 @@ a { /* remove styling from all anchor tags */
   html {
     font-size: 14px;
     /* overflow-x: hidden; NOT SURE if i need this */
-    background-color: var(--blue-m);
+    background-color: var(--purple-m);
   }
 
   .container {
@@ -255,7 +255,7 @@ a { /* remove styling from all anchor tags */
     grid-template-rows: 1fr;
     grid-template-areas: 
     "main-content-area";
-    background-color: var(--blue-m);
+    background-color: var(--purple-m);
     height: 92vh; /* content is 99vh total with responsive header */
   }
 
@@ -279,7 +279,7 @@ a { /* remove styling from all anchor tags */
     font-family: var(--primary-non-serif-font);
     /* background-color: #7D8590; */
     color: black;
-    background-color: var(--blue-m);
+    background-color: var(--purple-m);
   }
 
 /* __________________________________________________-\ responsive header and burger menu: ________________________________________________________________________________________________________________________ */
