@@ -255,7 +255,7 @@ a { /* remove styling from all anchor tags */
     grid-template-rows: 1fr;
     grid-template-areas: 
     "main-content-area";
-    background-color: var(--maroon-m);
+    background-color: var(--blue-m);
     height: 92vh; /* content is 99vh total with responsive header */
   }
 
