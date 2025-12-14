@@ -350,12 +350,12 @@ a { /* remove styling from all anchor tags */
 
   .burger div {
     width: 25px;
-    height: 4px;
-    margin: 4px;
+    height: 2px;
+    margin: 5px;
     /* background: black; */
     /* background-color: var(--maroon-d); */
-    /* background-color: gray; */
-    border: 2px solid #7D8590;
+    background-color: #7D8590;
+    /* border: 1px solid #7D8590; */
     /* background: grey; */
     transition: all 0.3s ease-in;
   }
