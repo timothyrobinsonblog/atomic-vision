@@ -275,15 +275,24 @@ a { /* remove styling from all anchor tags */
 
   .header-area-responsive {
     border-bottom: 1px solid black;
-    padding: 3px 0 3px 0;
+    padding: 3px 0 3px;
+    padding: 10px 0 10px 7.5vw;
     font-weight: bold;
     font-family: var(--primary-non-serif-font);
     /* background-color: #7D8590; */
     color: #7D8590;
     /* background-color: var(--blue-m);   */
     background-color: #0D1117;
-    text-align: right;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
+
+  .header-area-responsive a {
+    color: #7D8590;
+  }
+
 
 /* __________________________________________________-\ responsive header and burger menu: ________________________________________________________________________________________________________________________ */
 
@@ -300,11 +309,12 @@ a { /* remove styling from all anchor tags */
     min-height: fit-content;
     /* background-color: #7D8590; */
     /* background-color: #0D1117; */
+    background-color: var(--blue-m);  
     /* padding: 0.5vh 0 0.5vh 0; */
   }
 
   .responsive-header img {
-    height: 8vh;
+    height: 6vh;
     filter: grayscale(100%) contrast(1.85);
     margin-left: 7.5vw;
     /* padding-left: 7.5vw; */
@@ -361,7 +371,8 @@ a { /* remove styling from all anchor tags */
     margin: 7px;
     /* background: black; */
     /* background-color: var(--maroon-d); */
-    background-color: black;
+    /* background-color: black; */
+    /* background-color: #0D1117; */
     background-color: #7D8590;
     /* border: 1px solid #7D8590; */
     /* background: grey; */
