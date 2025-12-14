@@ -271,12 +271,12 @@ a { /* remove styling from all anchor tags */
     /* line-height: 1; */ /* check on phone */ 
   }
 
-  .header-area-responsive { /* nfdsnfudhsifhsidhfiusdhifhsdihfids */
+  /* .header-area-responsive {
     border-bottom: 1px solid black;
     padding: 10px 0 10px 0;
     font-weight: bold;
     font-family: var(--primary-non-serif-font);
-  }
+  } */
 
 /* __________________________________________________-\ responsive header and burger menu: ________________________________________________________________________________________________________________________ */
 
@@ -347,8 +347,8 @@ a { /* remove styling from all anchor tags */
     margin: 4px;
     /* background: black; */
     /* background-color: var(--maroon-d); */
-    background-color: gray;
-    border: 1px solid black;
+    /* background-color: gray; */
+    border: 2px solid black;
     /* background: grey; */
     transition: all 0.3s ease-in;
   }
