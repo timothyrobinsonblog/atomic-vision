@@ -212,6 +212,10 @@ a { /* remove styling from all anchor tags */
   vertical-align: super;
 }
 
+.main-text img { /* PLAAYYYRNUIRNUIENFUIHDFINDUHFKUNSDFUNHUDNFUDFHIH */
+  height: 3vh;
+}
+
 /* __________________________________________________-\ responsive design - tablet: ________________________________________________________________________________________________________________________*/
 
 /* @media screen and (max-width: 992px) {
@@ -223,6 +227,16 @@ a { /* remove styling from all anchor tags */
   .container {
     height: 85vh;
   }
+
+  .responsive-header img {
+    height: 4vh;
+    width: auto;
+  }
+
+  .responsive-logo {
+    padding-right: 7.5%;
+  }
+
 } */
 
 /* __________________________________________________-\ responsive design - phone: ________________________________________________________________________________________________________________________ */
@@ -244,7 +258,7 @@ a { /* remove styling from all anchor tags */
     grid-template-rows: 1fr;
     grid-template-areas: 
     "main-content-area";
-    background-color: var(--maroon-l);
+    background-color: var(--maroon-m);
     height: 92vh; /* content is 99vh total with responsive header */
   }
 
@@ -273,6 +287,11 @@ a { /* remove styling from all anchor tags */
     align-items: center;
     height: 7vh;
     min-height: fit-content;
+  }
+
+  .responsive-header img { /* PLAAYYYRNUIRNUIENFUIHDFINDUHFKUNSDFUNHUDNFUDFHIH */
+    height: 6vh;
+    filter: grayscale(100%) contrast(1.85);
   }
 
   .menu {
@@ -318,7 +337,9 @@ a { /* remove styling from all anchor tags */
     width: 45px;
     height: 6px;
     margin: 6px;
-    background: black;
+    /* background: black; */
+    background-color: var(--blue-l);
+    border: 1px solid black;
     /* background: grey; */
     transition: all 0.3s ease-in;
   }
@@ -343,13 +364,13 @@ a { /* remove styling from all anchor tags */
     border-radius: 15px;
     font-size: 1.2rem;
     font-weight: bold;
-    background-color: var(--maroon-l);
+    /* background-color: var(--maroon-l); */
     /* background-color: rgb(10, 10, 10); */
     /* background-color: black; */
     color: black;
     /* color: gray; */
     /* color: var(--maroon-m); */
-    border: 1px solid black;
+    /* border: 1px solid black; */
   }
 
   .nav-active {
