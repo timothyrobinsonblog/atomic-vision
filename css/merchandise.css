@@ -279,7 +279,7 @@ a { /* remove styling from all anchor tags */
     border-bottom: 1px solid black;
     z-index: 2; /* Make header top layer in document:  */
     position: relative;
-    background-color: var(--maroon-m);
+    background-color: var(--maroon-l);
     align-items: center;
     height: 7vh;
     min-height: fit-content;
@@ -336,7 +336,7 @@ a { /* remove styling from all anchor tags */
     height: 4px;
     margin: 4px;
     /* background: black; */
-    background-color: var(--maroon-l);
+    background-color: var(--maroon-d);
     border: 1px solid black;
     /* background: grey; */
     transition: all 0.3s ease-in;
