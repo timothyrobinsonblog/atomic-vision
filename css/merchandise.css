@@ -246,7 +246,8 @@ a { /* remove styling from all anchor tags */
   }
 
   .container {
-    width: 90vw; /* check on phone */
+    width: 100vw;
+    /* width: 90vw; */ /* check on phone */
   }
 
   .grid-container {
@@ -279,7 +280,7 @@ a { /* remove styling from all anchor tags */
     border-bottom: 1px solid black;
     z-index: 2; /* Make header top layer in document:  */
     position: relative;
-    background-color: var(--maroon-l);
+    /* background-color: var(--maroon-l); */
     align-items: center;
     height: 7vh;
     min-height: fit-content;
@@ -288,6 +289,7 @@ a { /* remove styling from all anchor tags */
   .responsive-header img {
     height: 6vh;
     filter: grayscale(100%) contrast(1.85);
+    padding-left: 7.5vw;
     /* border: 1px solid black; */
     /* border-radius: 50%; */
   }
@@ -329,6 +331,7 @@ a { /* remove styling from all anchor tags */
     /* padding: 1vh 0 1vh 2vw;
     border-radius: 25%;
     background-color: black; */
+    padding-right: 7.5vw;
   }
 
   .burger div {
@@ -336,7 +339,8 @@ a { /* remove styling from all anchor tags */
     height: 4px;
     margin: 4px;
     /* background: black; */
-    background-color: var(--maroon-d);
+    /* background-color: var(--maroon-d); */
+    background-color: gray;
     border: 1px solid black;
     /* background: grey; */
     transition: all 0.3s ease-in;
