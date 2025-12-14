@@ -272,8 +272,8 @@ a { /* remove styling from all anchor tags */
   }
 
   .header-area-responsive { /* nfdsnfudhsifhsidhfiusdhifhsdihfids */
-    border-bottom: 1px solid black;
-    padding: 5px 0 5px 0;
+    border-top: 1px solid black;
+    padding: 10px 0 10px 0;
     font-weight: bold;
     font-family: var(--primary-non-serif-font);
   }
