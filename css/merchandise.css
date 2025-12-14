@@ -268,15 +268,17 @@ a { /* remove styling from all anchor tags */
     z-index: 0;
     padding-bottom: 2vh; /* check on phone */ 
     font-size: 3rem;
-    /* line-height: 1; */ /* check on phone */ 
+    /* line-height: 1; */ /* check on phone */
+    height: 70vh;
   }
 
-  /* .header-area-responsive {
-    border-bottom: 1px solid black;
-    padding: 10px 0 10px 0;
+  .header-area-responsive {
+    border-top: 1px solid black;
+    padding: 10px 0 20px 0;
     font-weight: bold;
     font-family: var(--primary-non-serif-font);
-  } */
+    background-color: #7D8590;
+  }
 
 /* __________________________________________________-\ responsive header and burger menu: ________________________________________________________________________________________________________________________ */
 
@@ -284,16 +286,16 @@ a { /* remove styling from all anchor tags */
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     z-index: 2; /* Make header top layer in document:  */
     position: relative;
     /* background-color: var(--maroon-l); */
     align-items: center;
     height: 7vh;
     min-height: fit-content;
-    /* background-color: #7D8590; */
-    background-color: #0D1117;
-    padding: 2vh 0 1vh 0;
+    background-color: #7D8590;
+    /* background-color: #0D1117; */
+    padding: 0.5vh 0 0.5vh 0;
   }
 
   .responsive-header img {
@@ -341,20 +343,20 @@ a { /* remove styling from all anchor tags */
   }
 
   .burger {
-    /* TRY ON PHONE: */
+    /* TRY ON PHONEs: */
     /* padding: 1vh 0 1vh 2vw;
     border-radius: 25%;
     background-color: black; */
-    padding-left: 7.5vw;
+    padding-right: 7.5vw;
   }
 
   .burger div {
-    width: 25px;
-    height: 2px;
-    margin: 5px;
+    width: 30px;
+    height: 3px;
+    margin: 7px;
     /* background: black; */
     /* background-color: var(--maroon-d); */
-    background-color: #7D8590;
+    background-color: #0D1117;
     /* border: 1px solid #7D8590; */
     /* background: grey; */
     transition: all 0.3s ease-in;
