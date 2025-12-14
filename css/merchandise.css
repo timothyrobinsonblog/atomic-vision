@@ -242,7 +242,8 @@ a { /* remove styling from all anchor tags */
   html {
     font-size: 14px;
     /* overflow-x: hidden; NOT SURE if i need this */
-    background-color: var(--blue-m);
+    /* background-color: var(--blue-m); */
+    background-color: #0D1117;
   }
 
   .container {
@@ -361,6 +362,7 @@ a { /* remove styling from all anchor tags */
     /* background: black; */
     /* background-color: var(--maroon-d); */
     background-color: black;
+    background-color: #7D8590;
     /* border: 1px solid #7D8590; */
     /* background: grey; */
     transition: all 0.3s ease-in;
