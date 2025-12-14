@@ -297,13 +297,13 @@ a { /* remove styling from all anchor tags */
 
   .responsive-header img {
     height: 8vh;
-    /* filter: grayscale(100%) contrast(1.85); */
+    filter: grayscale(100%) contrast(1.85);
     margin-left: 7.5vw;
     /* padding-left: 7.5vw; */
     /* border: 1px solid black; */
     /* border-radius: 50%; */
     background-color: #0D1117;
-    /* background-color: var(--maroon-m); */
+    background-color: var(--maroon-m);
     border-radius: 100%;
   }
 
