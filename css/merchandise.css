@@ -271,6 +271,13 @@ a { /* remove styling from all anchor tags */
     /* line-height: 1; */ /* check on phone */ 
   }
 
+  .header-area-responsive { /* nfdsnfudhsifhsidhfiusdhifhsdihfids */
+    border-bottom: 1px solid black;
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+    font-family: var(--primary-non-serif-font);
+  }
+
 /* __________________________________________________-\ responsive header and burger menu: ________________________________________________________________________________________________________________________ */
 
   .responsive-header {
@@ -287,7 +294,7 @@ a { /* remove styling from all anchor tags */
   }
 
   .responsive-header img {
-    height: 6vh;
+    height: 8vh;
     filter: grayscale(100%) contrast(1.85);
     padding-left: 7.5vw;
     /* border: 1px solid black; */
